@@ -10,6 +10,7 @@
 * Added Repo to Code Climate
 * Added Eslint plugins
 * Connected Travis-ci
+* Testing Travis...
 
 ### Checkpoint #2 (v. 0.1.3)
 
