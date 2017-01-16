@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 const readlineSync = require('readline-sync');
 
 console.log('Welcome to the Brain Games!');
