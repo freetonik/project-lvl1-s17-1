@@ -1,12 +1,15 @@
 {
   "name": "brain-games-r",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Brain Games project",
   "bin": {
-    "brain-even": "bin/brain-even.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/rreboot/project-lvl1-s17/issues"
   },
-  "homepage": "https://github.com/rreboot/project-lvl1-s17#readme"
+  "homepage": "https://github.com/rreboot/project-lvl1-s17#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*"
+  }
 }
