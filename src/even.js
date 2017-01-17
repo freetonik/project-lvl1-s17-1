@@ -10,19 +10,27 @@ console.log(`Hello, ${name}!\n`);
 
 const rand = () => Math.round((Math.random() * (100 - 1)) + 1);
 
-const checkAnswer = () => {
+const enterAnswer = () => {
   const answer = readlineSync.question('Your answer: ');
   if (answer !== 'yes' && answer !== 'no') {
-    return checkAnswer();
+    return enterAnswer();
   }
   return answer;
 };
 
 const isEven = (num) => {
   if (num % 2 === 0) {
-    return 'yes';
+    return true;
   }
-  return 'no';
+  return false;
+};
+
+const isCorrect = (condition, parity) => {
+  if ((condition === 'yes' && parity === true) || (condition === 'no' && parity === false)) {
+    console.log('Correct!');
+    return true;
+  }
+  return false;
 };
 
 export default (count) => {
@@ -33,14 +41,11 @@ export default (count) => {
     }
     const number = rand();
     console.log(`Question: ${number}`);
-    const answer = checkAnswer();
-    if (answer === isEven(number)) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${answer}' is wrong answer ;(.\nLet's try again, ${name}`);
-      return;
+    const answer = enterAnswer();
+    if (isCorrect(answer, isEven(number))) {
+      return iter(acc - 1);
     }
-    return iter(acc - 1);
+    console.log(`'${answer}' is wrong answer ;(.\nLet's try again, ${name}`);
   };
 
   return iter(count);
