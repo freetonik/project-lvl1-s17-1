@@ -8,6 +8,10 @@
 
 [![Build Status](https://travis-ci.org/rreboot/project-lvl1-s17.svg?branch=master)](https://travis-ci.org/rreboot/project-lvl1-s17)
 
+### Checkpoint #4 (v. 0.3.0)
+
+* Added brain-even game (brain-even.js);
+
 ### Checkpoint #3 (v. 0.2.1)
 
 * Added Repo to Code Climate
