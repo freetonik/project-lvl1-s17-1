@@ -5,6 +5,11 @@
 [![Issue Count](https://codeclimate.com/github/rreboot/project-lvl1-s17/badges/issue_count.svg)](https://codeclimate.com/github/rreboot/project-lvl1-s17)
 [![Build Status](https://travis-ci.org/rreboot/project-lvl1-s17.svg?branch=master)](https://travis-ci.org/rreboot/project-lvl1-s17)
 
+### CHeckpoint #8
+*(v. 0.3.5)*
+* Added brain-progression game (brain-progression.js);
+Usage: brain-progression
+
 ### Checkpoint #7
 *(v. 0.3.4)*
 * Added brain-balance game (brain-balance.js);
