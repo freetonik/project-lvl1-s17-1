@@ -1,52 +1,26 @@
-#!/usr/bin/node
-
-import readlineSync from 'readline-sync';
-import welcome from './welcome';
+import game from './template';
 
 const description = 'Answer "yes" if number odd otherwise answer "no".';
-welcome(description);
-const name = readlineSync.question('\nMay I have your name? ');
-console.log(`Hello, ${name}!\n`);
 
-const rand = () => Math.round((Math.random() * (100 - 1)) + 1);
+const question = () => Math.round((Math.random() * (100 - 1)) + 1);
 
-const enterAnswer = () => {
-  const answer = readlineSync.question('Your answer: ');
-  if (answer !== 'yes' && answer !== 'no') {
-    return enterAnswer();
-  }
-  return answer;
-};
+const toStr = number => number;
 
-const isEven = (num) => {
-  if (num % 2 === 0) {
+const isValid = (value) => {
+  if (value === 'yes' || value === 'no') {
     return true;
   }
   return false;
 };
 
-const isCorrect = (condition, parity) => {
-  if ((condition === 'yes' && parity === true) || (condition === 'no' && parity === false)) {
-    console.log('Correct!');
-    return true;
+const correctAnswer = (number) => {
+  if (number % 2 === 0) {
+    return 'yes';
   }
-  return false;
+  return 'no';
 };
 
-export default (count) => {
-  const iter = (acc) => {
-    if (acc === 0) {
-      console.log(`Congratulations! ${name}`);
-      return;
-    }
-    const number = rand();
-    console.log(`Question: ${number}`);
-    const answer = enterAnswer();
-    if (isCorrect(answer, isEven(number))) {
-      return iter(acc - 1);
-    }
-    console.log(`'${answer}' is wrong answer ;(.\nLet's try again, ${name}`);
-  };
+const iterations = 3;
 
-  return iter(count);
-};
+export default () =>
+  game(description)(question, toStr, isValid, correctAnswer, iterations);

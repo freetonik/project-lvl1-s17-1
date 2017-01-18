@@ -5,6 +5,12 @@
 [![Issue Count](https://codeclimate.com/github/rreboot/project-lvl1-s17/badges/issue_count.svg)](https://codeclimate.com/github/rreboot/project-lvl1-s17)
 [![Build Status](https://travis-ci.org/rreboot/project-lvl1-s17.svg?branch=master)](https://travis-ci.org/rreboot/project-lvl1-s17)
 
+### Checkpoint #5
+*(v. 0.3.2)*
+* Changed game logic;
+* Added brain-calc game (brain-calc.js);
+Usage: brain-calc
+
 ### Checkpoint #4
 *(v. 0.3.1)*
 * Fixed brain-even logic;
