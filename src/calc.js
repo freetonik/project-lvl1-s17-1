@@ -51,4 +51,4 @@ const correctAnswer = (pair) => {
 const iterations = 3;
 
 export default () =>
-  game(description)(question, toStr, isValid, correctAnswer, iterations);
+  game(description, question, toStr, isValid, correctAnswer, iterations);

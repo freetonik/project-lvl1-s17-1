@@ -1,13 +1,13 @@
 import readlineSync from 'readline-sync';
 
-export default description => (question, toStr,
+export default (description, question, toStr,
     isValid, correctAnswer, iterations) => {
   console.log('Welcome to the Brain Games!');
   console.log(`${description}\n`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
 
-  const iter = (q, t, i, c, acc) => {
+  const iter = (acc) => {
     if (acc === 0) {
       console.log(`Congratulations, ${name}!`);
       return;
@@ -28,9 +28,10 @@ export default description => (question, toStr,
     const correct = correctAnswer(task);
     if (answer === correct) {
       console.log('Correct!');
-      return iter(q, t, i, c, acc - 1);
+      iter(acc - 1);
+      return;
     }
     console.log(`'${answer}' is wrong answer ;(.\nLet's try again, ${name}`);
   };
-  return iter(question, toStr, isValid, correctAnswer, iterations);
+  return iter(iterations);
 };

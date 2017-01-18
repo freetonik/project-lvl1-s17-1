@@ -13,8 +13,15 @@ const isValid = (value) => {
   return false;
 };
 
-const correctAnswer = (number) => {
+const isEven = (number) => {
   if (number % 2 === 0) {
+    return true;
+  }
+  return false;
+};
+
+const correctAnswer = (number) => {
+  if (isEven(number)) {
     return 'yes';
   }
   return 'no';
@@ -23,4 +30,4 @@ const correctAnswer = (number) => {
 const iterations = 3;
 
 export default () =>
-  game(description)(question, toStr, isValid, correctAnswer, iterations);
+  game(description, question, toStr, isValid, correctAnswer, iterations);
