@@ -5,6 +5,11 @@
 [![Issue Count](https://codeclimate.com/github/rreboot/project-lvl1-s17/badges/issue_count.svg)](https://codeclimate.com/github/rreboot/project-lvl1-s17)
 [![Build Status](https://travis-ci.org/rreboot/project-lvl1-s17.svg?branch=master)](https://travis-ci.org/rreboot/project-lvl1-s17)
 
+## (v. 0.4.0)
+* Added a menu to select game;
+
+Launch: `make start`
+
 ### Checkpoint #9
 *(v. 0.3.6)*
 * Added brain-prime game (brain-prime.js);

@@ -31,7 +31,9 @@ export default (description, question, toStr,
       iter(acc - 1);
       return;
     }
-    console.log(`'${answer}' is wrong answer ;(.\nLet's try again, ${name}`);
+    console.log(`\n'${answer}' is wrong answer ;(
+Correct answer was '${correct}'.
+Let's try again, ${name}!`);
   };
   return iter(iterations);
 };
