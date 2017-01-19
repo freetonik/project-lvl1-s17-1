@@ -1,6 +1,6 @@
 {
   "name": "brain-games-r",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Brain Games project",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -8,7 +8,8 @@
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",
     "brain-balance": "dist/bin/brain-balance",
-    "brain-progression": "dist/bin/brain-progression"
+    "brain-progression": "dist/bin/brain-progression",
+    "brain-prime": "dist/bin/brain-prime"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -5,31 +5,43 @@
 [![Issue Count](https://codeclimate.com/github/rreboot/project-lvl1-s17/badges/issue_count.svg)](https://codeclimate.com/github/rreboot/project-lvl1-s17)
 [![Build Status](https://travis-ci.org/rreboot/project-lvl1-s17.svg?branch=master)](https://travis-ci.org/rreboot/project-lvl1-s17)
 
-### CHeckpoint #8
+### Checkpoint #9
+*(v. 0.3.6)*
+* Added brain-prime game (brain-prime.js);
+
+Usage: `brain-prime`
+
+### Checkpoint #8
 *(v. 0.3.5)*
 * Added brain-progression game (brain-progression.js);
-Usage: brain-progression
+
+Usage: `brain-progression`
 
 ### Checkpoint #7
 *(v. 0.3.4)*
 * Added brain-balance game (brain-balance.js);
-Usage: brain-balance
+
+Usage: `brain-balance`
 
 ### Checkpoint #6
 *(v. 0.3.3)*
 * Fixed game logic;
 * Added brain-gcd game (brain-gcd.js);
-Usage: brain-gcd
+
+Usage: `brain-gcd`
 
 ### Checkpoint #5
 *(v. 0.3.2)*
 * Changed game logic;
 * Added brain-calc game (brain-calc.js);
-Usage: brain-calc
+
+Usage: `brain-calc`
 
 ### Checkpoint #4
 *(v. 0.3.1)*
 * Fixed brain-even logic;
+
+Usage: `brain-even`
 
 *(v. 0.3.0)*
 * Added brain-even game (brain-even.js);
@@ -54,6 +66,9 @@ Usage: brain-calc
 * "prepublish", "build" scripts
 
 Usage:
-`make start` - start app
+
+`make start` - start  demo app
+
 `make install` - install
-'make publish' - publish
+
+`make publish` - publish
