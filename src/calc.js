@@ -1,4 +1,4 @@
-import { cons, car, cdr, toString } from 'hexlet-pairs';
+import { cons, car, cdr } from 'hexlet-pairs';
 import game from './template';
 
 const description = 'What is the result of the expression?';

@@ -2,7 +2,6 @@ import game from './template';
 
 const description = 'Balance the given number.';
 
-
 const question = () => Math.round((Math.random() * (10000 - 10)) + 1);
 
 const toStr = number => `${number}`;
